@@ -64,13 +64,13 @@ public class yahtzee {
  
         }
       } while ((roll < 2) && (opnieuwrollen > 0)); 
-      Winst prijs = new Winst();
-      prijs.checkWinst(aDobbel, wins); // controleer uitkomst
-      wins[prijs.choice() - 1] = 1;
+      Winnings prize = new Winnings();
+      prize.checkWinnings(aDobbel, wins); // controleer uitkomst
+      wins[prize.choice() - 1] = 1;
       for (z = 0; z < 15; z++) {
         sum += wins[z];
       }
-      scorea += prijs.score();
+      scorea += prize.score();
       System.out.println("Totale score is: " + scorea); //print score uit
       if (sum < 15) {
         play = inputInt("Wil je opnieuw spelen ?(1=Ja, 2=Nee)");// keuze opnieuw spelen
