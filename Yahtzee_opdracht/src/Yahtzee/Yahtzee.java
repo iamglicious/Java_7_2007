@@ -111,4 +111,4 @@ public class Yahtzee {
     }
     return inputLine;
   }
-}
+}//test toevoeging
